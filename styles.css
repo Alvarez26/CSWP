@@ -1,0 +1,133 @@
+/* Dark Mode Styling - Default */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #222;
+    color: #fff;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Header */
+header {
+    display: flex;
+    text-align: center;
+    padding: 40px;
+    background-color: #111;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #111;
+    color: white;
+}
+.header-text{
+    display: flex;
+    flex-direction: column;
+}
+.header-text h1{
+    margin: 0;
+    font-size: 50px;
+}
+.header-text p{
+    margin: 5px 0 0;
+    font-size: 20px;
+    color: #ccc;
+}
+.headshot{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 20px;
+    object-fit: cover;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #333;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #66ccff;
+}
+
+/* Sections */
+section {
+    padding: 50px;
+    text-align: center;
+}
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Projects Section */
+.project-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 900px;
+    width: 100%;
+    margin: auto;
+}
+
+.project {
+    background: #333;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(255, 255, 255, 0.2);
+}
+
+/* Contact Section */
+.social-links a img {
+    width: 40px;
+    margin: 10px;
+    transition: transform 0.3s ease;
+}
+
+.social-links a img:hover {
+    transform: scale(1.2);
+}
+/* Remove underline and default styling from social media links */
+.social-links a {
+    text-decoration: none;
+    border: none;
+    display: inline-block;
+    margin: 0 10px; /* Adjust spacing between icons */
+}
