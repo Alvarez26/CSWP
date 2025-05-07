@@ -106,13 +106,6 @@ section {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
-
-
-
-
-
-
-
 /* ==== PROJECT SECTION ==== */
 .project-section {
   display: flex;
@@ -457,4 +450,22 @@ section {
 
 .resume-preview img:hover {
   transform: scale(1.05);
+}
+
+/* ==== EMAIL LINK STYLING ==== */
+.email-link {
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.1); /* Light transparent background */
+  color: #ffffff; /* White text */
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.email-link:hover {
+  background-color: rgba(255, 255, 255, 0.25);
+  color: #00ffff;
+  text-decoration: underline;
 }
