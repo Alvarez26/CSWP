@@ -41,17 +41,19 @@ header {
 .header-text h1 {
   margin: 0;
   font-size: 3rem;
+
 }
 
 .header-text p {
   margin: 5px 0 0;
   font-size: 1.2rem;
   color: #ccc;
+  
 }
 
 .headshot {
-  width: 80px;
-  height: 80px;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
   margin-right: 20px;
   object-fit: cover;
@@ -372,7 +374,7 @@ section {
   display: inline-block;
   padding: 12px 25px;
   margin-top: 15px;
-  background-color: #66ccff;
+  background-color: #7c33db;
   color: #000;
   text-decoration: none;
   border-radius: 5px;
@@ -419,16 +421,40 @@ section {
 .tool.linux       { background-color: rgba(47, 79, 79, 0.6); }   /* Dark Slate */
 .tool.python      { background-color: rgba(46, 139, 87, 0.6); }  /* Sea Green */
 .tool.sql         { background-color: rgba(106, 90, 205, 0.6); } /* Slate Blue */
-.tool.wireshark   { background-color: rgba(30, 144, 255, 0.6); } /* Dodger Blue */
+.tool.windows   { background-color: rgba(30, 144, 255, 0.6); } /* Dodger Blue */
 .tool.html        { background-color: rgba(255, 140, 0, 0.6); }  /* Dark Orange */
 .tool.php         { background-color: rgba(139, 0, 139, 0.6); }  /* Dark Magenta */
-.tool.mysql       { background-color: rgba(70, 130, 180, 0.6); } /* Steel Blue */
-.tool.git         { background-color: rgba(210, 105, 30, 0.6); } /* Chocolate */
-.tool.security    { background-color: rgba(178, 34, 34, 0.6); }  /* Firebrick */
-.tool.figma       { background-color: rgba(153, 50, 204, 0.6); } /* Dark Orchid */
+.tool.m       { background-color: rgba(70, 130, 180, 0.6); } /* Steel Blue */
+.tool.js         { background-color: rgba(210, 105, 30, 0.6); } /* Chocolate */
+.tool.snow    { background-color: rgba(178, 34, 34, 0.6); }  /* Firebrick */
+.tool.Incident       { background-color: rgba(153, 50, 204, 0.6); } /* Dark Orchid */
 
 .tool:hover {
   transform: scale(1.05);
   filter: brightness(1.2);
 }
 
+.resume-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.resume-text {
+  flex: 1 1 300px;
+  text-align: left;
+}
+
+.resume-preview img {
+  max-width: 250px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+.resume-preview img:hover {
+  transform: scale(1.05);
+}

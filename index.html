@@ -11,18 +11,24 @@
 
   <!-- Header -->
   <header>
-    <img src="images/Headshot(Test).jpeg" alt="Professional headshot of John Alvarez" class="headshot" />
+    <img src="images/Headshot.jpeg" alt="Professional headshot of John Alvarez" class="headshot" />
     <div class="header-text">
       <h1>John Alvarez</h1>
       <p>Cybersecurity Enthusiast | IT Student</p>
     </div>
   </header>
 
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
+
+
+
   <!-- Navigation -->
   <nav>
     <ul>
       <li><a href="#about">About</a></li>
       <li><a href="#projects">Projects</a></li>
+      <li><a href="#tools">Skills</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
@@ -31,17 +37,14 @@
   <section id="about" >
     <h2>About Me</h2>
     <p>
-      I'm an IT student passionate about cybersecurity, web development, and security integration.
-      I have studied abroad in Seoul, gaining a global perspective on technology and security.
+      Hello World! My name is John Alvarez, a fourth-year Information Technology student with a strong focus on backend development and cybersecurity. 
+      I specialize in PHP, MySQL, and server-side scripting to build secure, data-driven applications. I studied abroad in Seoul, South Korea, 
+      where I attended a Computer Science conference with engineers from Samsung Electronics, gaining global insights into software development.
+      I'm passionate about writing clean, efficient code, developing secure systems, and producing clear, maintainable technical documentation. 
+      I'm always eager to learn new skills and explore emerging technologies to stay at the forefront of the tech industry.
     </p>
   </section>
 
-  <section id="resume" >
-    <h2>Resume</h2>
-    <p>You can download my most up-to-date resume below.</p>
-    <a href="John_Alvarez_Resume.pdf" download class="resume-btn">Download Resume (PDF)</a>
-  </section>
-  
 
   <!-- Projects Section -->
   <section id="projects" class="project-section" >
@@ -113,24 +116,37 @@
   </section>
 
   <section id="tools">
-    <h2>Tools & Technologies</h2>
+    <h2>Skills</h2>
     <div class="tools-grid">
       <span class="tool linux">Linux</span>
       <span class="tool python">Python</span>
       <span class="tool sql">SQL</span>
-      <span class="tool wireshark">Wireshark</span>
+      <span class="tool windows">Windows OS</span>
       <span class="tool html">HTML/CSS</span>
       <span class="tool php">PHP</span>
-      <span class="tool mysql">MySQL</span>
-      <span class="tool git">Git & GitHub</span>
-      <span class="tool security">Cybersecurity</span>
-      <span class="tool figma">Figma</span>
+      <span class="tool m">Maintainence</span>
+      <span class="tool js">JavaScript</span>
+      <span class="tool snow">SNOW - ServiceNOW</span>
+      <span class="tool Incident">Incident Response</span>
     </div>
     
   </section>
   
-  
-  
+
+<section id="resume">
+  <h2>Resume</h2>
+  <div class="resume-wrapper">
+    <div class="resume-text">
+      <p>You can download my most up-to-date resume below.</p>
+      <a href="images/JAResume.pdf" download class="resume-btn">Download Resume (PDF)</a>
+    </div>
+    <div class="resume-preview">
+      <img src="images/JAResume.png" alt="Resume Preview" class="lightbox-trigger" />
+    </div>
+  </div>
+</section>
+
+
 
   <!-- Contact Section -->
   <section id="contact">
@@ -275,6 +291,13 @@ function handleSwipeGesture() {
     updateLightboxImage();
   }
 }
+document.querySelectorAll('.lightbox-trigger').forEach(img => {
+  img.addEventListener('click', () => {
+    lightboxImg.src = img.src;
+    lightbox.style.display = 'flex';
+  });
+});
+
 
 </script>
 
