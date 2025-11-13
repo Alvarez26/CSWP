@@ -12,144 +12,199 @@
 </head>
 <body>
 
-<!-- NAVIGATION -->
-<nav>
-  <ul>
-    <li><a href="#about">About</a></li>
-    <li><a href="#projects">Projects</a></li>
-    <li><a href="#skills">Skills</a></li>
-    <li><a href="#resume">Resume</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
-</nav>
+  <!-- NAVIGATION -->
+  <nav>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#resume">Resume</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 
-<!-- HEADER -->
-<header>
-  <img src="images/Headshot.jpeg" alt="Professional headshot of John Alvarez" class="headshot">
-  <div class="header-text">
-    <h1>John Alvarez</h1>
-    <p>Cybersecurity Enthusiast | Aspiring Junior Pen Tester | IT Student</p>
-  </div>
-</header>
+  <!-- HEADER -->
+  <header>
+    <img src="images/Headshot.jpeg" alt="Professional headshot of John Alvarez" class="headshot">
+    <div class="header-text">
+      <h1>John Alvarez</h1>
+      <p>Cybersecurity Enthusiast | Aspiring Junior Pen Tester | IT Student</p>
+    </div>
+  </header>
 
-<!-- ABOUT SECTION -->
-<section id="about">
-  <h2>About Me</h2>
-  <p> Hello World! My name is John Alvarez, a nerd who is a passionate knowledge
-     sponge with a strong foundation in the IT/Cybersecurity world. I have created
-      and implemented projects revolving around web development, database systems, 
-      mobile apps, security frameworks, and playbooks. I have experience in PHP, MySQL,
-      HTML/CSS, BASH, and Python. I've also developed projects like a phishing detection
-      system powered by AI to full-stack inventory management applications. I am currently
-      on path to getting my bachelors degree in Information Technology, while completing 
-      my first cybersecurity certificate and working on the second as I type this! The tech
-      space evolves everyday and I don't plan on getting left behind!
-</p>
-</section>
+  <!-- ABOUT SECTION -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      Hello World! My name is John Alvarez, a passionate knowledge sponge with a strong foundation in the IT and Cybersecurity world. 
+      I’ve developed projects spanning web development, database systems, mobile apps, and security frameworks. 
+      My experience includes PHP, MySQL, HTML/CSS, BASH, and Python. 
+      I’ve built projects such as a phishing detection system powered by AI and full-stack inventory management applications. 
+      I’m currently pursuing my bachelor’s degree in Information Technology while completing my second cybersecurity certificate. 
+      The tech space evolves every day, and I don’t plan on getting left behind!
+    </p>
+  </section>
 
-<!-- PROJECTS SECTION -->
-<section id="projects">
-  <h2>Projects</h2>
+  <!-- PROJECTS SECTION -->
+  <section id="projects">
+    <h2>Projects</h2>
 
+    <div class="project-container">
 
-  <div class="project-container">
-
-    <div class="project">
-      <h3>SDN-Based DDoS Detection Tool</h3>
-      <div class="carousel">
-        <button class="carousel-btn left">&#10094;</button>
-        <div class="carousel-track">
-          <img src="images/SDN1.png" alt="SDN1" class="carousel-img">
-          <img src="images/SDN2.png" alt="SDN2" class="carousel-img">
-          <img src="images/SDN3.png" alt="SDN3" class="carousel-img">
+      <!-- Project 1 -->
+      <div class="project">
+        <h3>Splunk Security Monitoring Dashboard</h3>
+        <div class="carousel">
+          <button class="carousel-btn left">&#10094;</button>
+          <div class="carousel-track">
+            <img src="images/SPL1.png" alt="Computer Store - Homepage" class="carousel-img lightbox-trigger">
+            <img src="images/SPL2.png" alt="Computer Store - Admin Dashboard" class="carousel-img lightbox-trigger">
+            <img src="images/SPL3.png" alt="Computer Store - Product Details Page" class="carousel-img lightbox-trigger">
+          </div>
+          <button class="carousel-btn right">&#10095;</button>
         </div>
-        <button class="carousel-btn right">&#10095;</button>
+        <p>I built a set of custom Splunk dashboards to analyze security logs and monitor endpoint activity using the BOTSv3 dataset. These dashboards include
+           Top Windows Security Event Codes, Endpoint Health - Top Active Hosts, and Logon Activity Over Time.</p>
       </div>
-      <p>This SDN project detects DDoS attacks in real-time using Mininet and a Python controller (POX/Ryu).</p>
-    </div>
 
-    <div class="project">
-      <h3>Cybersecurity Educational App</h3>
-      <div class="carousel">
-        <button class="carousel-btn left">&#10094;</button>
-        <div class="carousel-track">
-          <img src="images/CAS1.png" alt="Cyber App Screen 1" class="carousel-img">
-          <img src="images/CAS2.png" alt="Cyber App Screen 2" class="carousel-img">
-          <img src="images/CAS3.png" alt="Cyber App Screen 3" class="carousel-img">
-          <img src="images/CAS4.png" alt="Cyber App Screen 4" class="carousel-img">
+      <!-- Project 2 -->
+      <div class="project">
+        <h3>Configured My Own Home Server</h3>
+        <div class="carousel">
+          <button class="carousel-btn left">&#10094;</button>
+          <div class="carousel-track">
+            <img src="images/HOME1.png" alt="Computer Store - Homepage" class="carousel-img lightbox-trigger">
+            <img src="images/HOME2.png" alt="Computer Store - Admin Dashboard" class="carousel-img lightbox-trigger">
+            <img src="images/HOME3.png" alt="Computer Store - Product Details Page" class="carousel-img lightbox-trigger">
+          </div>
+          <button class="carousel-btn right">&#10095;</button>
         </div>
-        <button class="carousel-btn right">&#10095;</button>
+        <p>I built and manage a fully containerized home server environment using Ubuntu, Docker, and Portainer to self-host multiple services like my own
+           photo library, minecraft server, and file sharing system between all my machines.</p>
       </div>
-      <p>Interactive mobile-friendly prototype teaching cybersecurity fundamentals like phishing awareness and password safety.</p>
-    </div>
 
-    <div class="project">
-      <h3>Computer Parts E-commerce Website</h3>
-      <div class="carousel">
-        <button class="carousel-btn left">&#10094;</button>
-        <div class="carousel-track">
-          <img src="images/store1.png" alt="Store Front Page" class="carousel-img">
-          <img src="images/store2.png" alt="Admin Dashboard" class="carousel-img">
-          <img src="images/store3.png" alt="Product Details" class="carousel-img">
+      <!-- Project 3 -->
+      <div class="project">
+        <h3>AI SOC Analyst Bot - Llama LLM</h3>
+        <div class="carousel">
+          <button class="carousel-btn left">&#10094;</button>
+          <div class="carousel-track">
+            <img src="images/AI1.png" alt="Cybersecurity App - Home Screen" class="carousel-img lightbox-trigger">
+            <img src="images/AI2.png" alt="Cybersecurity App - Quiz Page" class="carousel-img lightbox-trigger">
+            <img src="images/AI3.png" alt="Cybersecurity App - Learning Modules" class="carousel-img lightbox-trigger">
+          </div>
+          <button class="carousel-btn right">&#10095;</button>
         </div>
-        <button class="carousel-btn right">&#10095;</button>
+        <p>This AI SOC analyst bot is a locally hosted AI model powered by llama and PHI-3. The application ingests log data
+           from Splunk or other SIEM tools, performs statistical analysis, identifies anomalies, and generates SOC-style insights.</p>
       </div>
-      <p>PHP & MySQL-based site with secure login, inventory management, and responsive Bootstrap design.</p>
+
+      <!-- Project 4 -->
+      <div class="project">
+        <h3>Cybersecurity Educational App</h3>
+        <div class="carousel">
+          <button class="carousel-btn left">&#10094;</button>
+          <div class="carousel-track">
+            <img src="images/CAS1.png" alt="Cybersecurity App - Home Screen" class="carousel-img lightbox-trigger">
+            <img src="images/CAS2.png" alt="Cybersecurity App - Quiz Page" class="carousel-img lightbox-trigger">
+            <img src="images/CAS3.png" alt="Cybersecurity App - Learning Modules" class="carousel-img lightbox-trigger">
+            <img src="images/CAS4.png" alt="Cybersecurity App - Password Tips Section" class="carousel-img lightbox-trigger">
+          </div>
+          <button class="carousel-btn right">&#10095;</button>
+        </div>
+        <p>Interactive mobile-friendly prototype teaching cybersecurity fundamentals such as phishing awareness and password safety.</p>
+      </div>
+
+      <!-- Project 4 -->
+      <div class="project">
+        <h3>Computer Parts E-commerce Website</h3>
+        <div class="carousel">
+          <button class="carousel-btn left">&#10094;</button>
+          <div class="carousel-track">
+            <img src="images/store1.png" alt="Computer Store - Homepage" class="carousel-img lightbox-trigger">
+            <img src="images/store2.png" alt="Computer Store - Admin Dashboard" class="carousel-img lightbox-trigger">
+            <img src="images/store3.png" alt="Computer Store - Product Details Page" class="carousel-img lightbox-trigger">
+          </div>
+          <button class="carousel-btn right">&#10095;</button>
+        </div>
+        <p>PHP & MySQL-based site with secure login, inventory management, and responsive Bootstrap design.</p>
+      </div>
+
+
+      <!-- Project 5 -->
+      <div class="project">
+        <h3>SDN-Based DDoS Detection Tool</h3>
+        <div class="carousel">
+          <button class="carousel-btn left">&#10094;</button>
+          <div class="carousel-track">
+            <img src="images/SDN1.png" alt="SDN-based DDoS Detection Topology" class="carousel-img lightbox-trigger">
+            <img src="images/SDN2.png" alt="DDoS Detection Flow Statistics" class="carousel-img lightbox-trigger">
+            <img src="images/SDN3.png" alt="Mininet SDN Network Simulation" class="carousel-img lightbox-trigger">
+          </div>
+          <button class="carousel-btn right">&#10095;</button>
+        </div>
+        <p>This SDN project detects DDoS attacks in real time using Mininet and a Python controller (POX/Ryu).</p>
+      </div>
+
+
     </div>
+  </section>
 
-  </div>
-</section>
-
-<!-- SKILLS SECTION -->
-<section id="skills">
-  <h2>Skills</h2>
-  <div class="tools-grid">
-    <span class="tool linux">Linux</span>
-    <span class="tool python">Python</span>
-    <span class="tool sql">SQL</span>
-    <span class="tool windows">Windows /  MACOS</span>
-    <span class="tool html">Threat Detection</span>
-    <span class="tool BASH">BASH</span>
-    <span class="tool SIEM Tools">SIEM Tools</span>
-    <span class="tool snow">Service NOW</span>
-    <span class="tool incident">Incident Response</span>
-    <span class="tool">Security Frameworks</span>
-    <span class="tool">Burp Suite</span>
-  </div>
-</section>
-
-<!-- RESUME SECTION -->
-<section id="resume">
-  <h2>Resume</h2>
-  <div class="resume-wrapper">
-    <div class="resume-text">
-      <p>Download my most up-to-date resume:</p>
-      <a href="images/John_E_Alvarez_Resume.jpg" download class="resume-btn">Download JPG</a>
+  <!-- SKILLS SECTION -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="tools-grid">
+      <span class="tool">Linux</span>
+      <span class="tool">Python</span>
+      <span class="tool">SQL</span>
+      <span class="tool">Windows / macOS</span>
+      <span class="tool">Threat Detection</span>
+      <span class="tool">BASH</span>
+      <span class="tool">SIEM Tools</span>
+      <span class="tool">ServiceNow</span>
+      <span class="tool">Incident Response</span>
+      <span class="tool">Security Frameworks</span>
+      <span class="tool">Burp Suite</span>
+      <span class="tool">AI-Models</span>
     </div>
-    <div class="resume-preview">
-      <img src="images/John_E_Alvarez_Resume.jpg" alt="Resume Preview" class="lightbox-trigger">
+  </section>
+
+  <!-- RESUME SECTION -->
+  <section id="resume">
+    <h2>Resume</h2>
+    <div class="resume-wrapper">
+      <div class="resume-text">
+        <p>Download my most up-to-date resume:</p>
+        <a href="images/John_E_Alvarez_Resume.jpg" download class="resume-btn">Download JPG</a>
+      </div>
+      <div class="resume-preview">
+        <img src="images/John_E_Alvarez_Resume.jpg" alt="Resume Preview" class="lightbox-trigger">
+      </div>
     </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:johnea1226@gmail.com" class="email-link">johnea1226@gmail.com</a></p>
+    <div class="social-links">
+      <a href="https://github.com/Alvarez26" target="_blank" aria-label="GitHub">
+        <img src="images/github.svg" alt="GitHub Logo">
+      </a>
+      <a href="https://www.linkedin.com/in/john-alvarez-8436761a1/" target="_blank" aria-label="LinkedIn">
+        <img src="images/linkedin.svg" alt="LinkedIn Logo">
+      </a>
+    </div>
+  </section>
+
+  <!-- LIGHTBOX -->
+  <div id="lightbox" class="lightbox">
+    <span class="close">&times;</span>
+    <button class="lightbox-arrow left">&#10094;</button>
+    <img class="lightbox-img" src="" alt="Expanded project image">
+    <button class="lightbox-arrow right">&#10095;</button>
   </div>
-</section>
 
-<!-- CONTACT SECTION -->
-<section id="contact">
-  <h2>Contact</h2>
-  <p>Email: <a href="mailto:johnea1226@gmail.com" class="email-link">johnea1226@gmail.com</a></p>
-  <div class="social-links">
-    <a href="https://github.com/Alvarez26" target="_blank"><img src="images/github.svg" alt="GitHub"></a>
-    <a href="https://www.linkedin.com/in/john-alvarez-8436761a1/" target="_blank"><img src="images/linkedin.svg" alt="LinkedIn"></a>
-  </div>
-</section>
-
-<!-- LIGHTBOX -->
-<div id="lightbox" class="lightbox">
-  <span class="close">&times;</span>
-  <button class="lightbox-arrow left">&#10094;</button>
-  <img class="lightbox-img" src="" alt="Expanded project image">
-  <button class="lightbox-arrow right">&#10095;</button>
-</div>
-
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
