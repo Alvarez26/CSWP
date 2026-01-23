@@ -8,7 +8,6 @@ body {
   background-size: cover;
   color: #fff;
   transition: background-color 0.4s, color 0.4s;
-
 }
 
 body::before {
@@ -23,7 +22,6 @@ body::before {
 html {
   scroll-behavior: smooth;
 }
-
 
 /* ==== NAVIGATION ==== */
 nav {
@@ -55,14 +53,9 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-
   color: #7c33db;
   text-shadow: 0 0 8px #7c33db;
-  /*color: #00ffff; CYAN COLOR
-  text-shadow: 0 0 8px #00ffff; 
-  */
 }
-
 
 /* ==== HEADER ==== */
 header {
@@ -112,8 +105,6 @@ section h2 {
   margin-bottom: 20px;
   color: #7c33db;
   text-shadow: 0 0 5px #7c33db;
-  /*color: #00ffff;
-  text-shadow: 0 0 5px #00ffff; */
 }
 
 /* ==== PROJECT SECTION ==== */
@@ -127,23 +118,19 @@ section h2 {
   background-color: rgba(30,30,30,0.85);
   border-radius: 12px;
   padding: 20px;
-  /*box-shadow: 0 0 15px rgba(0,255,255,0.2);*/
   box-shadow: 0 0 15px rgba(93, 0, 255, 0.2);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .project:hover {
   transform: scale(1.02);
-  /*box-shadow: 0 0 25px rgba(0,255,255,0.5);*/
   box-shadow: 0 0 50px rgba(93, 0, 255, 0.2);
 }
 
 .project h3 {
   margin-top: 0;
-  /*color: #00ffff;*/
   font-size: 1.5rem;
   color: #7c33db;
-  /*text-shadow: 0 0 5px #00ffff;*/
 }
 
 /* CAROUSEL */
@@ -202,47 +189,45 @@ section h2 {
   border-radius: 8px;
   color: white;
   transition: transform 0.3s ease, filter 0.3s ease, text-shadow 0.3s ease;
+  background-color: rgb(33, 7, 54);
 }
 
 .tool:hover {
   transform: scale(1.1);
   filter: brightness(1.3);
-  text-shadow: 0 0 8px #7c33db
+  text-shadow: 0 0 8px #7c33db;
 }
 
-/* Skill colors */
-/* .tool.linux { background: rgba(47,79,79,0.6); }
-.tool.python { background: rgba(46,139,87,0.6); }
-.tool.sql { background: rgba(106,90,205,0.6); }
-.tool.windows { background: rgba(30,144,255,0.6); }
-.tool.html { background: rgba(255,140,0,0.6); }
-.tool.php { background: rgba(139,0,139,0.6); }
-.tool.js { background: rgba(210,105,30,0.6); }
-.tool.snow { background: rgba(178,34,34,0.6); }
-.tool.incident { background: rgba(153,50,204,0.6); } */
-.tool { background-color: rgb(33, 7, 54);}
-
-/* ==== RESUME ==== */
-.resume-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 30px;
+/* ==== CERTIFICATIONS ==== */
+.certs-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  align-items: start;
 }
 
-.resume-text { flex: 1 1 300px; text-align: left; }
+.cert-card {
+  background-color: rgba(30,30,30,0.85);
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 0 15px rgba(93, 0, 255, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
-.resume-preview img {
-  max-width: 250px;
-  border-radius: 8px;
-  cursor: pointer;
+.cert-card:hover {
+  transform: scale(1.02);
   box-shadow: 0 0 50px rgba(93, 0, 255, 0.2);
-  transition: transform 0.3s ease;
 }
 
-.resume-preview img:hover { transform: scale(1.05); }
+.cert-card h3 {
+  margin-top: 0;
+  font-size: 1.5rem;
+  color: #7c33db;
+}
 
-.resume-btn {
+.cert-btn {
+  display: inline-block;
+  margin-top: 10px;
   background: #7c33db;
   color: #fff;
   padding: 12px 25px;
@@ -252,13 +237,64 @@ section h2 {
   transition: background 0.3s, transform 0.2s;
 }
 
-.resume-btn:hover { background: #7c33db; transform: scale(1.05); }
+.cert-btn:hover {
+  background: #7c33db;
+  transform: scale(1.05);
+}
+
+.cert-preview {
+  margin-top: 15px;
+}
+
+.cert-preview img {
+  width: 100%;
+  max-width: 420px;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 0 50px rgba(93, 0, 255, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.cert-preview img:hover {
+  transform: scale(1.03);
+}
 
 /* ==== CONTACT ==== */
-.social-links { display: flex; justify-content: center; gap: 15px; margin-top: 15px; }
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 15px;
+}
 
-.social-links a img { width: 40px; transition: transform 0.3s; }
-.social-links a img:hover { transform: scale(1.2); filter: brightness(1.5); }
+.social-links a img {
+  width: 40px;
+  transition: transform 0.3s;
+}
+
+.social-links a img:hover {
+  transform: scale(1.2);
+  filter: brightness(1.5);
+}
+
+/* ==== CONTACT BUTTON ==== */
+.contact-btn {
+  display: inline-block;
+  margin-top: 10px;
+  background: #7c33db;
+  color: #fff;
+  padding: 12px 25px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 6px;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.contact-btn:hover {
+  background: #7c33db;
+  transform: scale(1.05);
+}
+
 
 /* ==== LIGHTBOX ==== */
 .lightbox {
@@ -272,23 +308,41 @@ section h2 {
   z-index: 2000;
 }
 
-.lightbox-img { max-width: 90%; max-height: 90%; border-radius: 10px; }
+.lightbox-img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 10px;
+}
 
 .lightbox .close {
-  position: absolute; top: 40px; right: 60px;
-  font-size: 3rem; color: #fff; cursor: pointer; z-index: 2100;
+  position: absolute;
+  top: 40px;
+  right: 60px;
+  font-size: 3rem;
+  color: #fff;
+  cursor: pointer;
+  z-index: 2100;
 }
 
 .lightbox-arrow {
-  position: absolute; top: 50%; transform: translateY(-50%);
-  font-size: 3rem; background: rgba(0,0,0,0.6); color: #fff;
-  border: none; padding: 0 15px; cursor: pointer; z-index: 2100;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 3rem;
+  background: rgba(0,0,0,0.6);
+  color: #fff;
+  border: none;
+  padding: 0 15px;
+  cursor: pointer;
+  z-index: 2100;
 }
 
 .lightbox-arrow.left { left: 30px; }
 .lightbox-arrow.right { right: 30px; }
 
-.lightbox-arrow:hover, .lightbox .close:hover { color: #7c33db; }
+.lightbox-arrow:hover, .lightbox .close:hover {
+  color: #7c33db;
+}
 
 /* ==== RESPONSIVE ==== */
 @media (max-width: 768px) {
@@ -298,6 +352,7 @@ section h2 {
   .project-container { grid-template-columns: 1fr; }
   .tools-grid { grid-template-columns: repeat(auto-fit,minmax(100px,1fr)); }
 }
+
 @media (max-width: 768px) {
   .headshot {
     width: 250px;
